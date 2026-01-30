@@ -1,0 +1,15 @@
+langchain
+langchain-community
+langchain-core
+pymupdf
+pypdf
+sentence-transformers
+faiss-cpu
+chromadb
+transformers
+accelerate
+bitsandbytes
+huggingface_hub
+safetensors
+sentencepiece
+datasets
