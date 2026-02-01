@@ -16,12 +16,12 @@ def get_pdf_documents():
     """This function 'exports' the documents to whoever calls it."""
     logger.info("Starting PDF directory load...")
     
-    docs = dir_loader.load()
+    documents = dir_loader.load()
     
-    logger.info(f"Loaded {len(docs)} document pages.")
-    return docs
+    logger.info(f"Loaded {len(documents)} document pages.")
+    return documents
 
-# 3. This allows you to still test THIS file directly
+# 3. This allows us to still test this code directly
 if __name__ == "__main__":
     docs = get_pdf_documents()
     print(docs[0].page_content[:300])
