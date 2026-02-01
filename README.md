@@ -21,3 +21,4 @@ my_project/
 │           ├── __init__.py
 │           └── logger.py
 └── tests/
+      └──test.py
