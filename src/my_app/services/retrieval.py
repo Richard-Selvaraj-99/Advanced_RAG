@@ -39,14 +39,14 @@ class RAGRetriever:
             score_threshold,
         )
 
-        # 1️⃣ Embed query
+        #  Embed query
         query_embedding = self.embedding_manager.model.encode(
             [query],
             normalize_embeddings=True,
             convert_to_numpy=True,
         )[0]
 
-        # 2️⃣ Vector search
+        #  Vector search
         results = self.vector_store.similarity_search(
             query_embedding=query_embedding,
             top_k=top_k,
