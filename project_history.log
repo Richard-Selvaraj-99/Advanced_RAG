@@ -1,0 +1,5 @@
+2026-02-03 18:40:57,424 | INFO | Hello! This is a test log message.
+2026-02-03 18:40:57,424 | WARNING | Something might be wrong!
+2026-02-03 18:45:21,127 | INFO | Hello! This is a test log message.
+2026-02-03 18:45:21,127 | WARNING | Something might be wrong!
+2026-02-03 18:45:21,501 | INFO | Hugging Face Authentication Successful.
