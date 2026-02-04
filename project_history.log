@@ -44,3 +44,14 @@
 2026-02-04 13:47:15,785 | INFO | Vector store initialized | collection=pdf_documents | count=1107
 2026-02-04 13:47:15,785 | INFO | Initialized DocumentChunker | chunk_size=1000 | chunk_overlap=200
 2026-02-04 13:47:15,785 | INFO | Loading LLM: mistralai/Mistral-7B-Instruct-v0.3
+2026-02-04 15:20:08,678 | INFO | Hello! This is a test log message.
+2026-02-04 15:20:08,679 | WARNING | Something might be wrong!
+2026-02-04 15:20:09,418 | INFO | Loading embedding model | model=all-MiniLM-L6-v2
+2026-02-04 15:20:13,826 | INFO | Embedding model loaded | dimension=384
+2026-02-04 15:20:14,029 | INFO | Vector store initialized | collection=pdf_documents | count=1107
+2026-02-04 15:20:14,029 | INFO | Initialized DocumentChunker | chunk_size=1000 | chunk_overlap=200
+2026-02-04 15:20:14,029 | INFO | Loading LLM: mistralai/Mistral-7B-Instruct-v0.3
+2026-02-04 15:20:37,198 | INFO | LLM loaded successfully
+2026-02-04 15:20:37,265 | INFO | Database already contains data. Skipping ingestion.
+2026-02-04 15:24:25,111 | INFO | Retrieving: who is noah?
+2026-02-04 15:24:25,704 | INFO | Running similarity search | top_k=3 | filters=None
