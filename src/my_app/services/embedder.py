@@ -2,7 +2,7 @@ from typing import List
 import numpy as np
 
 from sentence_transformers import SentenceTransformer
-from langchain.schema import Document
+from langchain_core.documents import Document
 
 from my_app.utils.logger import get_logger
 

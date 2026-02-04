@@ -2,7 +2,7 @@ from typing import List, Optional
 import os
 
 import chromadb
-from langchain.schema import Document
+from langchain_core.documents import Document
 import numpy as np
 
 from my_app.utils.logger import get_logger

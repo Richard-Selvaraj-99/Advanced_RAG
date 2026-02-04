@@ -3,3 +3,44 @@
 2026-02-03 18:45:21,127 | INFO | Hello! This is a test log message.
 2026-02-03 18:45:21,127 | WARNING | Something might be wrong!
 2026-02-03 18:45:21,501 | INFO | Hugging Face Authentication Successful.
+2026-02-04 09:04:15,310 | INFO | Hello! This is a test log message.
+2026-02-04 09:04:15,310 | WARNING | Something might be wrong!
+2026-02-04 09:04:15,957 | INFO | Hugging Face Authentication Successful.
+2026-02-04 10:20:24,322 | INFO | Hello! This is a test log message.
+2026-02-04 10:20:24,322 | WARNING | Something might be wrong!
+2026-02-04 10:20:24,820 | INFO | Hugging Face Authentication Successful.
+2026-02-04 10:42:54,931 | INFO | Hello! This is a test log message.
+2026-02-04 10:42:54,931 | WARNING | Something might be wrong!
+2026-02-04 10:42:54,937 | INFO | Starting PDF directory load...
+2026-02-04 12:29:18,854 | INFO | Hello! This is a test log message.
+2026-02-04 12:29:18,854 | WARNING | Something might be wrong!
+2026-02-04 13:03:49,755 | INFO | Hello! This is a test log message.
+2026-02-04 13:03:49,755 | WARNING | Something might be wrong!
+2026-02-04 13:04:38,183 | INFO | Hello! This is a test log message.
+2026-02-04 13:04:38,183 | WARNING | Something might be wrong!
+2026-02-04 13:07:38,763 | INFO | Hello! This is a test log message.
+2026-02-04 13:07:38,765 | WARNING | Something might be wrong!
+2026-02-04 13:07:39,782 | INFO | Loading embedding model | model=all-MiniLM-L6-v2
+2026-02-04 13:07:43,627 | INFO | Embedding model loaded | dimension=384
+2026-02-04 13:07:48,112 | INFO | Vector store initialized | collection=pdf_documents | count=0
+2026-02-04 13:07:48,112 | INFO | Initialized DocumentChunker | chunk_size=1000 | chunk_overlap=200
+2026-02-04 13:07:48,112 | INFO | Loading LLM: mistralai/Mistral-7B-Instruct-v0.3
+2026-02-04 13:13:52,841 | INFO | LLM loaded successfully
+2026-02-04 13:13:52,903 | INFO | Database empty. Starting ingestion...
+2026-02-04 13:13:52,905 | INFO | Loading PDFs from: C:\Rag-advanced\src\my_app\ingestion\pdf_files
+2026-02-04 13:13:58,345 | INFO | Loaded 278 document pages.
+2026-02-04 13:13:58,345 | INFO | Starting document chunking | documents=278
+2026-02-04 13:13:58,380 | INFO | Chunking complete | input_docs=278 | output_chunks=1107
+2026-02-04 13:13:58,382 | INFO | Generating embeddings | documents=1107 | batch_size=32
+2026-02-04 13:14:14,753 | INFO | Embeddings generated | shape=(1107, 384)
+2026-02-04 13:14:14,755 | INFO | Adding documents to vector store | chunks=1107
+2026-02-04 13:14:15,629 | INFO | Documents added | total_chunks=1107
+2026-02-04 13:19:12,944 | INFO | Retrieving: who is noah?
+2026-02-04 13:19:12,958 | INFO | Running similarity search | top_k=3 | filters=None
+2026-02-04 13:47:09,141 | INFO | Hello! This is a test log message.
+2026-02-04 13:47:09,143 | WARNING | Something might be wrong!
+2026-02-04 13:47:11,204 | INFO | Loading embedding model | model=all-MiniLM-L6-v2
+2026-02-04 13:47:15,476 | INFO | Embedding model loaded | dimension=384
+2026-02-04 13:47:15,785 | INFO | Vector store initialized | collection=pdf_documents | count=1107
+2026-02-04 13:47:15,785 | INFO | Initialized DocumentChunker | chunk_size=1000 | chunk_overlap=200
+2026-02-04 13:47:15,785 | INFO | Loading LLM: mistralai/Mistral-7B-Instruct-v0.3
