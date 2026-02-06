@@ -77,7 +77,7 @@ High-performance asynchronous API endpoints for querying and document status mon
 ---
  Getting Started
  
-##Prerequisites
+## Prerequisites
 * **Python 3.11+**
 
 * git clone https://github.com/Richard-Selvaraj-99/Advanced_RAG.git
