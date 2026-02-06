@@ -1,4 +1,5 @@
-graph LR
+#Stages of RAG
+
     A[PDF Document] --> B[Embedding Model]
     B --> C[(ChromaDB)]
     C --> D[Retrieval]
