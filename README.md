@@ -64,7 +64,7 @@ Each retrieved chunk includes source PDF name and page number, enabling transpar
 ---------------------------------------------------------------------------------
 # FastAPI Backend
 
-#High-performance asynchronous API endpoints for querying and document status monitoring.
+High-performance asynchronous API endpoints for querying and document status monitoring.
 ------------------------------------------------------------------------------------
 ##Tech Stack
 | Component       | Technology                           |
@@ -75,31 +75,25 @@ Each retrieved chunk includes source PDF name and page number, enabling transpar
 | LLM Gateway     | Groq / OpenAI                        |
 | API Framework   | FastAPI                              |
 --------------------------------------------------------------------------------------------------
-# Getting Started
-#1️ Prerequisites
-
-#Python 3.11+
+ Getting Started
+1️ Prerequisites
+Python 3.11+
 --------------------------------------------------------------------------------------------------
-#2.
+2.
 git clone https://github.com/Richard-Selvaraj-99/Advanced_RAG.git
 cd Advanced_RAG
 --------------------------------------------------------------------------------------------------
-#3. uv init
+3. uv init
 uv venv
 uv add -r requriement.txt  or uv sync if used to handling TOML file
 uvicorn src.my_app.main:app --reload
 --------------------------------------------------------------------------------------------------
-##📉 Roadmap (Future Improvements)
-#⬆️ Upstream & Downstream
-
-#Upstream: Cloud storage support (AWS S3) and real-time web scraping
-
+📉 Roadmap (Future Improvements)
+⬆️ Upstream & Downstream
+Upstream: Cloud storage support (AWS S3) and real-time web scraping
 --------------------------------------------------------------------------------------------------
-##🚀 Planned Enhancements
-
- #Hybrid Search (Vector + BM25 keyword matching)
-
- #cross-Encoder reranking for top-k results
-
- #Semantic chunking based on thematic shifts
+🚀 Planned Enhancements
+Hybrid Search (Vector + BM25 keyword matching)
+cross-Encoder reranking for top-k results
+emantic chunking based on thematic shifts
 
