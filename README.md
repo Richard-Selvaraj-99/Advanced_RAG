@@ -89,12 +89,23 @@ uv venv
 uv add -r requriement.txt  or uv sync if used to handling TOML file
 uvicorn src.my_app.main:app --reload
 -----------------------------------------------------------------------------------
-Roadmap (Future Improvements)
-Upstream & Downstream
-Upstream: Cloud storage support (AWS S3) and real-time web scraping
------------------------------------------------------------------------------------
-🚀 Planned Enhancements
-Hybrid Search (Vector + BM25 keyword matching)
-cross-Encoder reranking for top-k results
-emantic chunking based on thematic shifts
+
+🔄 Data Ecosystem (Upstream/Downstream)
+Upstream: Future support for Cloud storage (AWS S3) and real-time web scraping.
+
+Downstream: JSON outputs for frontend consumption and automated knowledge auditing.
+
+⚠️ Challenges Faced & Solved
+Vocabulary Mismatch: Solved via Multi-Query Expansion, ensuring synonyms trigger the correct vector matches.
+
+Context Loss: Addressed using Recursive Splitting to keep related sentences in the same chunk.
+
+Retrieval Noise: Managed by using Metadata filtering to ensure the LLM only receives the most relevant document sections.
+
+📉 Roadmap (Planned Enhancements)
+[ ] Hybrid Search: Combining Vector similarity with BM25 keyword matching.
+
+[ ] Reranking: Adding a Cross-Encoder step for top-k results to improve precision.
+
+[ ] Semantic Chunking: Shifting from character-based breaks to thematic shift
 
