@@ -1,34 +1,51 @@
 #  Advanced RAG: Multi-Query Document Intelligence
 
 An end-to-end **Retrieval-Augmented Generation (RAG)** pipeline designed for high-precision document intelligence.  
-This system leverages **Multi-Query Generation** to overcome the vocabulary gap between user queries and technical documents, achieving significantly higher retrieval accuracy than standard RAG setups.
+This system leverages **Multi-Query Generation** to overcome the vocabulary gap between user queries and technical documents, achieving significantly higher retrieval accuracy than standard RAG setups and uses Recursive text splitter(context aware text splitter)to maintain sematic meanings.
 
 ---
 
-##  System Architecture
+## Project Architecture
 
 This project follows a modular **Service-Oriented Architecture (SOA)**.  
 Instead of relying on a single query, the system expands each user question into multiple semantic variations before searching the vector database—maximizing recall and contextual coverage.
 
+#Stages of RAG
+
+    A[PDF Document] --> B[Embedding Model]
+    B --> C[(ChromaDB)]
+    C --> D[Retrieval]
+    D --> E[LLM]
+    E --> F[Final Output] 
+
+#project structure
+```text
+my_project/
+├── pyproject.toml
+├── src/
+│   └── my_app/
+│       ├── __init__.py      # Hoists your main functions
+│       ├── main.py          # FastAPI entry point
+│       ├── core/
+│       │   ├── hugging_face_hub.py
+│       │   └── .env         # Config, constants, secrets
+│       ├── ingestion/
+│       │   ├── pdf_files/
+│       │   ├── __init__.py
+│       │   └── pdf_ingestion.py
+│       ├── services/        # The "Heavy Lifters"
+│       │   ├── __init__.py
+│       │   ├── chunking.py
+│       │   ├── embedder.py  # Embedding logic
+│       │   ├── vector_db.py # ChromaDB logic
+│       │   ├── retrieval.py
+│       │   └── llm.py       # LLM / Inference logic
+│       └── utils/
+│           ├── __init__.py
+│           └── logger.py
+└── tests/
+    └── test.py
 ```
-graph TD
-    %% User Input
-    Q[User Query] --> MQ[LLM: Multi-Query Generation]
-
-    %% Multi-Query Expansion
-    MQ --> Q1[Query variation 1]
-    MQ --> Q2[Query variation 2]
-    MQ --> Q3[Query variation 3]
-
-    %% Parallel Search
-    Q1 & Q2 & Q3 --> Embed[Embedding Model]
-    Embed --> Search{Similarity Search}
-
-    %% Retrieval & Fusion
-    VDB[(ChromaDB)] -.-> Search
-    Search --> Results[Consolidated Context]
-    Results --> LLM[LLM: Final Answer Generation]
-    LLM --> Out[Final Response]
 -------------------------------------------------------------------------------
 
 # Advanced Features
