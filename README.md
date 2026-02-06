@@ -90,22 +90,24 @@ uv add -r requriement.txt  or uv sync if used to handling TOML file
 uvicorn src.my_app.main:app --reload
 -----------------------------------------------------------------------------------
 
-🔄 Data Ecosystem (Upstream/Downstream)
-Upstream: Future support for Cloud storage (AWS S3) and real-time web scraping.
+## 🔄 Data Ecosystem (Upstream/Downstream)
 
-Downstream: JSON outputs for frontend consumption and automated knowledge auditing.
+* **Upstream:** Future support for Cloud storage (AWS S3) and real-time web scraping.
+* **Downstream:** JSON outputs for frontend consumption and automated knowledge auditing.
 
-⚠️ Challenges Faced & Solved
-Vocabulary Mismatch: Solved via Multi-Query Expansion, ensuring synonyms trigger the correct vector matches.
+---
 
-Context Loss: Addressed using Recursive Splitting to keep related sentences in the same chunk.
+## ⚠️ Challenges Faced & Solved
 
-Retrieval Noise: Managed by using Metadata filtering to ensure the LLM only receives the most relevant document sections.
+* **Vocabulary Mismatch:** Solved via **Multi-Query Expansion**, ensuring synonyms trigger the correct vector matches even when user terminology differs from the source.
+* **Context Loss:** Addressed using **Recursive Splitting** to keep related sentences in the same chunk, preventing semantic fragmentation.
+* **Retrieval Noise:** Managed by using **Metadata filtering** to ensure the LLM only receives the most relevant document sections.
 
-📉 Roadmap (Planned Enhancements)
-[ ] Hybrid Search: Combining Vector similarity with BM25 keyword matching.
+---
 
-[ ] Reranking: Adding a Cross-Encoder step for top-k results to improve precision.
+## 📉 Roadmap (Planned Enhancements)
 
-[ ] Semantic Chunking: Shifting from character-based breaks to thematic shift
+- [ ] **Hybrid Search:** Combining Vector similarity with BM25 keyword matching for improved keyword precision.
+- [ ] **Reranking:** Adding a **Cross-Encoder** step for top-k results to significantly improve final answer relevance.
+- [ ] **Semantic Chunking:** Shifting from fixed-size breaks to thematic shifts based on embedding distance.
 
