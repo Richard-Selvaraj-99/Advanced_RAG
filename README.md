@@ -94,7 +94,6 @@ uvicorn src.my_app.main:app --reload
 
 Upstream: Cloud storage support (AWS S3) and real-time web scraping
 
-Downstream: Export retrieved context into fine-tuning pipelines for domain-specific models
 --------------------------------------------------------------------------------------------------
 🚀 Planned Enhancements
 
