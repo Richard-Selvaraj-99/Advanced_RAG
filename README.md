@@ -74,7 +74,7 @@ High-performance asynchronous API endpoints for querying and document status mon
 | Embeddings      | Hugging Face (sentence-transformers) |
 | LLM Gateway     | Groq / OpenAI                        |
 | API Framework   | FastAPI                              |
------------------------------------------------------------------------------------
+---
  Getting Started
  
 ##Prerequisites
