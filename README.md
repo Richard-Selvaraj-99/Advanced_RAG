@@ -76,11 +76,12 @@ High-performance asynchronous API endpoints for querying and document status mon
 | API Framework   | FastAPI                              |
 -----------------------------------------------------------------------------------
  Getting Started
-1️ Prerequisites
+ 
+1️.Prerequisites
 Python 3.11+
+
 -----------------------------------------------------------------------------------
-2.
-git clone https://github.com/Richard-Selvaraj-99/Advanced_RAG.git
+2.git clone https://github.com/Richard-Selvaraj-99/Advanced_RAG.git
 cd Advanced_RAG
 -----------------------------------------------------------------------------------
 3. uv init
@@ -88,8 +89,8 @@ uv venv
 uv add -r requriement.txt  or uv sync if used to handling TOML file
 uvicorn src.my_app.main:app --reload
 -----------------------------------------------------------------------------------
-📉 Roadmap (Future Improvements)
-⬆️ Upstream & Downstream
+Roadmap (Future Improvements)
+Upstream & Downstream
 Upstream: Cloud storage support (AWS S3) and real-time web scraping
 -----------------------------------------------------------------------------------
 🚀 Planned Enhancements
