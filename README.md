@@ -30,7 +30,7 @@ graph TD
     Results --> LLM[LLM: Final Answer Generation]
     LLM --> Out[Final Response]
 -------------------------------------------------------------------------------
-'''
+
 # Advanced Features
 ## Multi-Query Retrieval
 
