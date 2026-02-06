@@ -10,7 +10,7 @@ This system leverages **Multi-Query Generation** to overcome the vocabulary gap 
 This project follows a modular **Service-Oriented Architecture (SOA)**.  
 Instead of relying on a single query, the system expands each user question into multiple semantic variations before searching the vector database—maximizing recall and contextual coverage.
 
-```mermaid
+```
 graph TD
     %% User Input
     Q[User Query] --> MQ[LLM: Multi-Query Generation]
@@ -30,7 +30,7 @@ graph TD
     Results --> LLM[LLM: Final Answer Generation]
     LLM --> Out[Final Response]
 -------------------------------------------------------------------------------
-
+'''
 # Advanced Features
 # Multi-Query Retrieval
 
