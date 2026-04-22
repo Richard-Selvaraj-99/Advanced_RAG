@@ -1,4 +1,4 @@
-from my_app.ingestion.pdf_ingestion import get_pdf_documents
+from my_app.Ingestion.pdf_ingestion import get_pdf_documents
 from my_app.services.chunking import DocumentChunker
 from my_app.services.embedder import EmbeddingManager
 from my_app.services.vector_db import VectorStore
